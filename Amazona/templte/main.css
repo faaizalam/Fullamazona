@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100vh;
+  font-size: 1rem;
+}
+
+/* layout */
+
+.grid-cont {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+header {
+  grid-area: header;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1px;
+}
+main {
+  grid-area: main;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  /* flex-wrap: wrap; */
+}
+.product-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  flex-wrap: wrap;
+}
+footer {
+  grid-area: footer;
+  background-color: rgb(233, 30, 30);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* common */
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #ff8000;
+}
+header a {
+  color: white;
+  padding: 1px;
+}
+a.brand {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* images */
+
+.medium {
+  display: flex;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  border: 1px solid grey;
+  margin: 10px;
+}
+.price {
+  font-weight: bold;
+  margin: 10px;
+}
+.name {
+  margin: 10px;
+  font-size: 15px;
+}
+/* .rating span {
+  margin: 0.1rem;
+  color: #000000;
+  
+}
+.rating{
+  color: black;
+} */
